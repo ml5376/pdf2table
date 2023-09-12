@@ -4,15 +4,11 @@ outline="outline.txt"
 
 with open('outline.txt','w') as f:
     f.write('\n')
-
-def locate_chapter_by_chapter_name():
-    data=np.loadtxt('outline.txt',delimiter=' ',dtype=str)
-    print('data: ',data)
-    return
-locate_chapter_by_chapter_name()
-
-
-
+    
+"""
+原始代码来自
+ https://github.com/beaverden/pdftoc/tree/main
+"""
 
 def get_tree_pages(root, info,count, depth=0):
     """
