@@ -61,7 +61,12 @@ def find_text_by_page_nums(pdf_file, page_nums):
 
 dict=locate_chapter_by_chapter_name()
 print(dict)
-print(find_start_end_page(dict, "5.经营效率"))
 
-page_nums =find_start_end_page(dict, "5.经营效率")
+print('the pdf contains chapters:', dict['title'])
+
+name=input('please enter the chapter name that you want to read about:')
+#"5.经营效率"
+# print(find_start_end_page(dict, "5.经营效率"))
+print(name)
+page_nums =find_start_end_page(dict,str(name))
 print(find_text_by_page_nums("example.pdf",page_nums))
